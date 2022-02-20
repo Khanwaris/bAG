@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ing"
+    android:foregroundTint="#E31A1A"
+    tools:context=".PlaySongs">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="368dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginEnd="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/previous"
+            android:layout_width="115dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:background="#00F6F3F3"
+            android:backgroundTint="#BC8A9C"
+            android:contentDescription="@string/todo"
+            android:foregroundTint="#A3861B"
+            app:srcCompat="@drawable/previous"
+            app:tint="#201E1E" />
+
+        <ImageView
+            android:id="@+id/play"
+            android:layout_width="121dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/todo"
+            app:srcCompat="@drawable/pause"
+            app:tint="#000000"
+            tools:ignore="ImageContrastCheck" />
+
+        <ImageView
+            android:id="@+id/next"
+            android:layout_width="137dp"
+            android:layout_height="81dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/todo"
+            app:srcCompat="@drawable/next"
+            app:tint="#000000" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="163dp"
+        android:layout_marginEnd="190dp"
+        android:layout_marginBottom="125dp"
+        android:singleLine="true"
+        android:text="TextView"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="330dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="159dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="211dp"
+        android:progressTint="#EFE8E8"
+        android:thumb="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
